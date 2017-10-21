@@ -1,0 +1,12 @@
+<div>
+  <img class="imageSize" [src]="article.pictureURL" *ngIf="article.pictureURL" mat-line>
+  <img class="imageSize" [src]="defaultPictureURL" *ngIf="!article.pictureURL" mat-line>
+  <div mat-line>
+    <h4 mat-line>
+      {{ article.title }}
+    </h4>
+    <P mat-line>
+      {{ user.name }}
+    </P>
+  </div>
+</div>

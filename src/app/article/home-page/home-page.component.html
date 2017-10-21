@@ -1,0 +1,15 @@
+<div>
+  <div>
+    <h3 mat-line>
+      Today's top stories
+    </h3>
+    <button mat-raised-button color="primary" mat-line>Add Story</button>
+  </div>
+  <div *ngIf="articles" class="divSeparation">
+    <mat-list>
+      <mat-list-item *ngFor="let article of articles" class="itemSize">
+        <at-article-item [article]="article"></at-article-item>
+      </mat-list-item>
+    </mat-list>
+  </div>
+</div>
